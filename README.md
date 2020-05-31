@@ -1,24 +1,9 @@
-# covid_data
+This app was developed by the Data Coffee team during the 2020 Nasa Space Apps Challenge, as an attempt to grow our foces through data in the fight agaisnt covid-19
 
-## Project setup
-```
-yarn install
-```
+LinkedIn:
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+linkedin.com/soaresligia 
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Do Lu:
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+linkedin.com/lucianomrolim
