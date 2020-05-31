@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="col-xl-6">
     <v-card
-      :height="$vuetify.breakpoint.smAndUp ? '500px' : ''"
+      :height="$vuetify.breakpoint.smAndUp ? '415px' : ''"
       elevation="0"
       style="background: transparent !important;"
     >
@@ -36,28 +36,31 @@
           md="4"
           class="px-0 d-flex justify-center justify-sm-start animate__animated animate__backInRight"
         >
-          <v-card width="85%" elevation="10" class="pa-5">
+          <v-card width="85%" elevation="0" class="pa-5 card-action">
             <div class="title-card">
               Whats your occupation area?
             </div>
             <v-card-text>
               <v-select
-                color="#5dc196"
+                hide-details
+                outlined
                 v-model="item"
-                outlined=""
                 :items="items"
                 label="Select"
               ></v-select>
-              <v-btn
-                color="#63c398"
-                style="text-transform: none;"
-                dark
-                block
-                x-large
-                @click="goAndSend()"
-              >
-                Begin
-              </v-btn>
+              <div class="d-flex justify-center">
+                <v-btn
+                  hide-details
+                  color="#63c398"
+                  elevation="0"
+                  class="col-8 mt-4 begin"
+                  dark
+                  x-large
+                  @click="goAndSend()"
+                >
+                  Begin
+                </v-btn>
+              </div>
             </v-card-text>
           </v-card>
         </v-col>
@@ -93,13 +96,15 @@ export default {
 .pre-title {
   color: #5dc196;
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 5px;
 }
 
 .title-page {
-  font-size: 4.7rem;
+  font-size: 5.5rem;
   font-weight: bold;
   color: #1a8a92;
+  line-height: 125px;
 }
 
 .subtitle-container {
@@ -109,16 +114,29 @@ export default {
 .subtitle-page {
   color: #868686;
   font-size: 1.5rem;
+  line-height: 33px;
+}
+
+.select {
+  border-radius: 8px;
+  border: solid 1px #63c398 !important;
+}
+
+.begin {
+  text-transform: none;
+  font-size: 20px;
 }
 
 .section {
-  margin-top: 80px;
+  margin-top: 55px;
 }
-
+.card-action {
+  box-shadow: 1px 1px 20px 4px rgba(94, 193, 150, 0.3) !important;
+}
 .title-card {
-  padding: 20px;
+  padding: 15px 10px;
   text-align: center;
-  font-size: 1.1rem !important;
+  font-size: 20px !important;
   color: #1a8a92;
   font-weight: bold;
 }

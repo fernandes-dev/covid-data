@@ -40,7 +40,6 @@
         text
         class="mr-10 animate__animated animate__backInRight"
       >
-        <v-icon>mdi-information-outline</v-icon>
         <span class="title">About</span>
       </v-btn>
     </v-app-bar>
@@ -73,7 +72,9 @@
         </div>
       </v-card>
     </div>
-    <Collaborators />
+    <div class="collaborators">
+      <Collaborators />
+    </div>
     <v-card tile="">
       <v-footer class="font-weight-medium d-flex justify-center" height="130px">
         <div>
@@ -89,7 +90,6 @@
           text
           class="mr-10"
         >
-          <v-icon>mdi-information-outline</v-icon>
           <span class="title">About</span>
         </v-btn>
       </v-footer>
@@ -168,5 +168,9 @@ export default {
 
 .title-about {
   color: #1a8a92;
+}
+
+.collaborators {
+  background: white;
 }
 </style>

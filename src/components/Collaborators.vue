@@ -2,8 +2,8 @@
   <v-row
     class="my-10 animate__animated animate__backInLeft d-flex justify-center"
   >
-    <div class="col-12 d-flex justify-center white--text mb-10">
-      <h1>
+    <div class="col-12 d-flex justify-center mb-10">
+      <h1 class="collaborators-panel">
         Collaborators
       </h1>
     </div>
@@ -22,7 +22,7 @@
                 class="v-card--reveal d-flex flex-column justify-center pa-2"
                 style="height: 100%;"
               >
-                <div class=" description" v-html="item.description"></div>
+                <div class="pt-8 description" v-html="item.description"></div>
                 <v-btn
                   target="blank"
                   :href="item.linkedin"
@@ -74,7 +74,7 @@ export default {
           "https://media-exp1.licdn.com/dms/image/C5603AQEzjQ8xQ1MScg/profile-displayphoto-shrink_800_800/0?e=1596672000&v=beta&t=dKB6w_Hdzx0IkfMhaoR6hO6u5lFG37RFd3MezaqJuHM",
         linkedin: "https://www.linkedin.com/in/soaresligia/",
         description:
-          "Cyber Security Analyst at TIVIT | Blue Team | Ethical Hacker in Progress | Cyber Security Student | Speaker"
+          "Cyber Security Analyst at TIVIT | Ethical Hacker in Progress | Cyber Security Student"
       },
       {
         name: "Diéferson Bandinelli",
@@ -90,14 +90,15 @@ export default {
 </script>
 
 <style>
+.collaborators-panel {
+  color: #188a92;
+}
 .img-perfil {
-  border-radius: 2% !important;
-  /* border: solid 2px #1a8a92; */
+  border-radius: 50% !important;
 }
 
 .name {
-  border-bottom: solid 2px #1a8a92;
-  color: white !important;
+  color: rgba(0, 0, 0, 0.815) !important;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -120,7 +121,7 @@ export default {
 }
 
 .description {
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   font-weight: bold;
   display: block;
