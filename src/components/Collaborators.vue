@@ -7,13 +7,13 @@
         Collaborators
       </h1>
     </div>
-    <v-col cols="12" sm="3" v-for="(item, i) in collaborators" :key="i">
+    <v-col cols="12" sm="4" md="2" v-for="(item, i) in collaborators" :key="i">
       <div class="d-flex flex-column align-center">
         <v-hover v-slot:default="{ hover }" open-delay="0">
           <v-img
             class="img-perfil mb-3"
-            width="250"
-            height="250"
+            width="200"
+            height="200"
             :src="item.img"
           >
             <v-expand-transition>
@@ -46,6 +46,13 @@
 export default {
   data: () => ({
     collaborators: [
+      {
+        name: "Thiago Tavares",
+        img:
+          "https://media-exp1.licdn.com/dms/image/C4D03AQELto1Jo7niAg/profile-displayphoto-shrink_800_800/0?e=1596672000&v=beta&t=4yMjJHZvzUGdYH0O8PKW6jX6uGsIfwqAiez_RW7AY8U",
+        linkedin: "https://www.linkedin.com/in/thiago-tavares-98813a32/",
+        description: "UI designer in SmartMEI"
+      },
       {
         name: "Eduardo Fernandes",
         img:
@@ -92,7 +99,7 @@ export default {
   border-bottom: solid 2px #1a8a92;
   color: white !important;
   text-decoration: none;
-  font-size: 1.18rem;
+  font-size: 13px;
   font-weight: bold;
 }
 

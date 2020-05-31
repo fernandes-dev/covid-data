@@ -73,7 +73,7 @@ export default {
   data: () => ({
     items: [
       "Medical",
-      "Cience",
+      "Science",
       "Student",
       "Engeneering",
       "Mathematics",
