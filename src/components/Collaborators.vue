@@ -2,7 +2,7 @@
   <v-row
     class="my-10 animate__animated animate__backInLeft d-flex justify-center"
   >
-    <div class="col-12 white--text mb-10">
+    <div class="col-12 d-flex justify-center white--text mb-10">
       <h1>
         Collaborators
       </h1>
@@ -99,7 +99,7 @@ export default {
   border-bottom: solid 2px #1a8a92;
   color: white !important;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -124,5 +124,6 @@ export default {
   color: white;
   font-weight: bold;
   display: block;
+  text-align: center;
 }
 </style>

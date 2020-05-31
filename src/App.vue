@@ -72,8 +72,8 @@
           Espaço reservado para power bi
         </div>
       </v-card>
-      <Collaborators />
     </div>
+    <Collaborators />
     <v-card tile="">
       <v-footer class="font-weight-medium d-flex justify-center" height="130px">
         <div>
