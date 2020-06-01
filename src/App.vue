@@ -119,7 +119,7 @@
       v-if="item"
       width="100%"
       height="550px"
-      src="https://app.powerbi.com/reportEmbed?reportId=eeac3884-c00c-433c-bfe7-83b9874433f6&autoAuth=true&ctid=d41140b6-cbf2-42c8-95d5-f649a15b5c97&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
+      src="https://app.powerbi.com/reportEmbed?reportId=0396f5bb-3c59-4565-b309-8c055bc46133&appId=289fd847-1d35-478a-97d1-c846639c7043&autoAuth=true&ctid=d41140b6-cbf2-42c8-95d5-f649a15b5c97&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
       frameborder="0"
       allowFullScreen="true"
     ></iframe>
@@ -149,12 +149,12 @@
         </v-btn>
       </v-footer>
     </v-card>
-    <v-dialog v-model="dialog" width="500">
+    <v-dialog v-model="dialog" width="700">
       <v-card>
         <v-card-title class="title-about">
           About
         </v-card-title>
-        <v-card-text>
+        <v-card-text class="text-justify">
           This app was developed by the Data Coffee team during the 2020 Nasa
           Space Apps Challenge, as an attempt to grow our foces through data in
           the fight agaisnt covid-19
@@ -169,7 +169,9 @@
           Department of Health, European Centre for Disease Prevention and
           Control (ECDC), Ministry of Health Singapore (MOH), and others. JHU
           CCSE maintains the data on the 2019 Novel Coronavirus COVID-19
-          (2019-nCoV) Data Repository on Github.
+          (2019-nCoV) Data Repository on Github. We used the International
+          Monetary Fund database to analyze information such as GDP per Capita
+          and the most recent data from the world population.
         </v-card-text>
 
         <v-divider></v-divider>
